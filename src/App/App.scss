@@ -1,0 +1,20 @@
+@import '../responsive.scss';
+@import '../index.scss';
+
+.App {
+  background-color: $primary-background;
+  padding: 3%;
+
+  @include sm {
+    margin: 0 0;
+  }
+  @include md {
+    margin: 0 10%;
+  }
+  @include lg {
+    margin: 0 20%;
+  }
+  @include xl {
+    margin: 0 25%;
+  }
+}

@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SalesMenu has a valid snapshot 1`] = `
+<div
+  className="sales-menu"
+>
+  <div
+    className="menu-header"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col s12 header-title"
+      >
+        Sales
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col s12 header-description"
+      >
+        Insights about sales
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col s12"
+    >
+      <div
+        className="hoverable z-depth-2 card"
+      >
+        <div
+          className="card-content"
+        >
+          <span
+            className="card-title grey-text text-darken-4"
+          >
+            Total sales in November?
+          </span>
+          <div>
+            You have sales worth SGD 80586.54 in the last 30 days.
+          </div>
+        </div>
+        <div
+          className="card-reveal"
+        >
+          <span
+            className="card-title grey-text text-darken-4"
+          >
+            Total sales in November?
+            <i
+              className="material-icons right"
+            >
+              close
+            </i>
+          </span>
+        </div>
+        <div
+          className="card-action"
+        >
+          <button
+            className="btn-flat indigo-text text-darken-2"
+            onClick={[Function]}
+            type="button"
+          >
+            PIN IT
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col s12"
+    >
+      <div
+        className="hoverable z-depth-2 card"
+      >
+        <div
+          className="card-content"
+        >
+          <span
+            className="card-title grey-text text-darken-4"
+          >
+            Total sales this week?
+          </span>
+          <div>
+            You have not sold anything this week or you have not uploaded your invoices.
+          </div>
+        </div>
+        <div
+          className="card-reveal"
+        >
+          <span
+            className="card-title grey-text text-darken-4"
+          >
+            Total sales this week?
+            <i
+              className="material-icons right"
+            >
+              close
+            </i>
+          </span>
+        </div>
+        <div
+          className="card-action"
+        >
+          <button
+            className="btn-flat indigo-text text-darken-2"
+            onClick={[Function]}
+            type="button"
+          >
+            PIN IT
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col s12"
+    >
+      <div
+        className="hoverable z-depth-2 card"
+      >
+        <div
+          className="card-content"
+        >
+          <span
+            className="card-title grey-text text-darken-4"
+          >
+            Card #3
+          </span>
+          <div>
+            #3 Lorem ipsum dolor sit amet
+          </div>
+        </div>
+        <div
+          className="card-reveal"
+        >
+          <span
+            className="card-title grey-text text-darken-4"
+          >
+            Card #3
+            <i
+              className="material-icons right"
+            >
+              close
+            </i>
+          </span>
+        </div>
+        <div
+          className="card-action"
+        >
+          <button
+            className="btn-flat indigo-text text-darken-2"
+            onClick={[Function]}
+            type="button"
+          >
+            PIN IT
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col s12"
+    >
+      <div
+        className="hoverable z-depth-2 card"
+      >
+        <div
+          className="card-content"
+        >
+          <span
+            className="card-title grey-text text-darken-4"
+          >
+            Card #4
+          </span>
+          <div>
+            #4 consectetur adipiscing elit
+          </div>
+        </div>
+        <div
+          className="card-reveal"
+        >
+          <span
+            className="card-title grey-text text-darken-4"
+          >
+            Card #4
+            <i
+              className="material-icons right"
+            >
+              close
+            </i>
+          </span>
+        </div>
+        <div
+          className="card-action"
+        >
+          <button
+            className="btn-flat indigo-text text-darken-2"
+            onClick={[Function]}
+            type="button"
+          >
+            PIN IT
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

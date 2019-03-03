@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainMenu has a valid snapshot 1`] = `
+<div
+  className="main-menu"
+>
+  <div
+    className="main-title"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col s12"
+      >
+        Konigle
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div
+    className="entry-with-hr"
+  >
+    <div
+      className="entry"
+    >
+      <a
+        aria-current={null}
+        href="#/sales"
+        onClick={[Function]}
+      >
+        <div
+          className="entry-name"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s12 entry-name"
+            >
+              Sales
+            </div>
+          </div>
+        </div>
+        <div
+          className="entry-description"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s12 entry-description"
+            >
+              Insights about sales
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <hr />
+  </div>
+  <div
+    className="entry-with-hr"
+  >
+    <div
+      className="entry"
+    >
+      <a
+        aria-current={null}
+        href="#/customers"
+        onClick={[Function]}
+      >
+        <div
+          className="entry-name"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s12 entry-name"
+            >
+              Customers
+            </div>
+          </div>
+        </div>
+        <div
+          className="entry-description"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s12 entry-description"
+            >
+              Insights about customers
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <hr />
+  </div>
+  <div
+    className="entry-with-hr"
+  >
+    <div
+      className="entry"
+    >
+      <a
+        aria-current={null}
+        href="#/bulletin"
+        onClick={[Function]}
+      >
+        <div
+          className="entry-name"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s12 entry-name"
+            >
+              Bulletin
+            </div>
+          </div>
+        </div>
+        <div
+          className="entry-description"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s12 entry-description"
+            >
+              Daily summary for your business
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <hr />
+  </div>
+  <div
+    className="entry-with-hr"
+  >
+    <div
+      className="entry"
+    >
+      <a
+        aria-current={null}
+        href="#/ask"
+        onClick={[Function]}
+      >
+        <div
+          className="entry-name"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s12 entry-name"
+            >
+              Ask
+            </div>
+          </div>
+        </div>
+        <div
+          className="entry-description"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s12 entry-description"
+            >
+              Ask a question
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <hr />
+  </div>
+  <div
+    className="entry-with-hr"
+  >
+    <div
+      className="entry"
+    >
+      <a
+        aria-current={null}
+        href="#/tasks"
+        onClick={[Function]}
+      >
+        <div
+          className="entry-name"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s12 entry-name"
+            >
+              Tasks
+            </div>
+          </div>
+        </div>
+        <div
+          className="entry-description"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s12 entry-description"
+            >
+              Tools for your business
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <hr />
+  </div>
+  <div
+    className="entry-with-hr"
+  >
+    <div
+      className="entry"
+    >
+      <a
+        aria-current={null}
+        href="#/connect"
+        onClick={[Function]}
+      >
+        <div
+          className="entry-name"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s12 entry-name"
+            >
+              Connect
+            </div>
+          </div>
+        </div>
+        <div
+          className="entry-description"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s12 entry-description"
+            >
+              Connect...
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <hr />
+  </div>
+</div>
+`;

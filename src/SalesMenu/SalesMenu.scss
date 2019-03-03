@@ -1,0 +1,39 @@
+@import '../index.scss';
+@import '../responsive.scss';
+
+.header-title {
+  font-size: 3rem;
+  color: $primary-color;
+  line-height: 2rem;
+}
+
+.header-description {
+  color: $primary-color;
+  line-height: 3rem;
+}
+
+.card-title {
+  font-weight: 600 !important;
+  margin-top: -7px !important;
+  font-size: 1rem !important;
+}
+
+// The .grey-text and .text-darken-4 are hard coded into react-materialize.
+// Piling up specifity to win over the !important rule on .grey-text.
+span.card-title.grey-text.text-darken-4 {
+  color: $primary-color !important;
+}
+
+.card-title + div {
+  font-size: 1.2rem !important;
+  line-height: 3rem !important; 
+}
+
+.card-action {
+  color: $primary-color;
+  text-align: right;
+}
+
+button {
+  color: $primary-color;
+}
