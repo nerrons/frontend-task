@@ -37,7 +37,7 @@ describe('MainMenu', () => {
   });
 
   it('renders 6 entries', () => {
-    const element = shallow(
+    const wrapper = shallow(
       <HashRouter>
         <MainMenu
           title="Konigle"
@@ -45,7 +45,7 @@ describe('MainMenu', () => {
         />
       </HashRouter>,
     );
-    const numEntries = element.find(MainMenu).dive().find('.entry-with-hr').length;
+    const numEntries = wrapper.find(MainMenu).dive().find('.entry-with-hr').length;
     expect(numEntries).toBe(6);
   });
 });

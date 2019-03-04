@@ -28,7 +28,7 @@ exports[`SalesMenu has a valid snapshot 1`] = `
   </div>
   <hr />
   <div
-    className="row"
+    className="row pin-card"
   >
     <div
       className="col s12"
@@ -67,6 +67,7 @@ exports[`SalesMenu has a valid snapshot 1`] = `
         >
           <button
             className="btn-flat indigo-text text-darken-2"
+            id="pin-button-0"
             onClick={[Function]}
             type="button"
           >
@@ -77,7 +78,7 @@ exports[`SalesMenu has a valid snapshot 1`] = `
     </div>
   </div>
   <div
-    className="row"
+    className="row pin-card"
   >
     <div
       className="col s12"
@@ -116,6 +117,7 @@ exports[`SalesMenu has a valid snapshot 1`] = `
         >
           <button
             className="btn-flat indigo-text text-darken-2"
+            id="pin-button-1"
             onClick={[Function]}
             type="button"
           >
@@ -126,7 +128,7 @@ exports[`SalesMenu has a valid snapshot 1`] = `
     </div>
   </div>
   <div
-    className="row"
+    className="row pin-card"
   >
     <div
       className="col s12"
@@ -165,6 +167,7 @@ exports[`SalesMenu has a valid snapshot 1`] = `
         >
           <button
             className="btn-flat indigo-text text-darken-2"
+            id="pin-button-2"
             onClick={[Function]}
             type="button"
           >
@@ -175,7 +178,7 @@ exports[`SalesMenu has a valid snapshot 1`] = `
     </div>
   </div>
   <div
-    className="row"
+    className="row pin-card"
   >
     <div
       className="col s12"
@@ -214,6 +217,7 @@ exports[`SalesMenu has a valid snapshot 1`] = `
         >
           <button
             className="btn-flat indigo-text text-darken-2"
+            id="pin-button-3"
             onClick={[Function]}
             type="button"
           >

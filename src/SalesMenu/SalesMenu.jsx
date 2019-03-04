@@ -10,22 +10,22 @@ const currency = 'SGD';
 const amount = 80586.54;
 const cards = [
   {
-    id: 0,
+    cardId: 0,
     title: `Total sales in ${month}?`,
     content: `You have sales worth ${currency} ${amount} in the last 30 days.`,
   },
   {
-    id: 1,
+    cardId: 1,
     title: 'Total sales this week?',
     content: 'You have not sold anything this week or you have not uploaded your invoices.',
   },
   {
-    id: 2,
+    cardId: 2,
     title: 'Card #3',
     content: '#3 Lorem ipsum dolor sit amet',
   },
   {
-    id: 3,
+    cardId: 3,
     title: 'Card #4',
     content: '#4 consectetur adipiscing elit',
   },
@@ -54,27 +54,28 @@ class SalesMenu extends Component {
     };
   }
 
-  onPinHandler = (id) => {
+  onPinHandler = (cardId) => {
     const { pinnedCard } = this.state;
-    if (id === pinnedCard) {
+    if (cardId === pinnedCard) {
       this.setState({ pinnedCard: -1 });
     } else {
-      this.setState({ pinnedCard: id });
+      this.setState({ pinnedCard: cardId });
     }
   }
 
-  isCardPinned = (id) => {
+  isCardPinned = (cardId) => {
     const { pinnedCard } = this.state;
-    return id === pinnedCard;
+    return cardId === pinnedCard;
   }
 
-  createCard = ({ id, title, content }) => (
+  createCard = ({ cardId, title, content }) => (
     <PinCard
-      id={id}
-      key={id}
+      id={`pin-card-${cardId}`}
+      key={cardId}
+      cardId={cardId}
       title={title}
       content={content}
-      isPinned={this.isCardPinned(id)}
+      isPinned={this.isCardPinned(cardId)}
       onPinHandler={this.onPinHandler}
     />
   );
@@ -85,8 +86,8 @@ class SalesMenu extends Component {
       <div className="sales-menu">
         <Header title={entries[0].name} description={entries[0].description} />
         <hr />
-        {cards.filter(c => c.id === pinnedCard).map(this.createCard)}
-        {cards.filter(c => c.id !== pinnedCard).map(this.createCard)}
+        {cards.filter(c => c.cardId === pinnedCard).map(this.createCard)}
+        {cards.filter(c => c.cardId !== pinnedCard).map(this.createCard)}
       </div>
     );
   }
@@ -97,17 +98,17 @@ class SalesMenu extends Component {
 // Only one card can be pinned at a time. When one card is pinned, others are automatically
 //   unpinned and restored to the default order.
 const PinCard = ({
-  id, title, content, isPinned, onPinHandler,
+  cardId, title, content, isPinned, onPinHandler,
 }) => (
-  <Row>
+  <Row key={cardId} className="pin-card">
     <Col s={12}>
       <Card
         className="hoverable z-depth-2"
         title={title}
         actions={[
           isPinned
-            ? <PinButton id={id} key={id} onPinHandler={onPinHandler} toPin={false} />
-            : <PinButton id={id} key={id} onPinHandler={onPinHandler} toPin />,
+            ? <PinButton cardId={cardId} key={cardId} onPinHandler={onPinHandler} toPin={false} />
+            : <PinButton cardId={cardId} key={cardId} onPinHandler={onPinHandler} toPin />,
         ]}
       >
         {content}
@@ -116,7 +117,7 @@ const PinCard = ({
   </Row>
 );
 PinCard.propTypes = {
-  id: PropTypes.number.isRequired,
+  cardId: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   isPinned: PropTypes.bool.isRequired,
@@ -125,17 +126,18 @@ PinCard.propTypes = {
 
 
 // A flat button that shows either pin or unpin according to the current pinning state.
-const PinButton = ({ toPin, id, onPinHandler }) => (
+const PinButton = ({ toPin, cardId, onPinHandler }) => (
   <button
+    id={`pin-button-${cardId}`}
     type="button"
     className="btn-flat indigo-text text-darken-2"
-    onClick={() => onPinHandler(id)}
+    onClick={() => onPinHandler(cardId)}
   >
     {toPin ? 'PIN IT' : 'UNPIN IT'}
   </button>
 );
 PinButton.propTypes = {
-  id: PropTypes.number.isRequired,
+  cardId: PropTypes.number.isRequired,
   toPin: PropTypes.bool.isRequired,
   onPinHandler: PropTypes.func.isRequired,
 };
