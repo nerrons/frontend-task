@@ -2,35 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { Row, Col, Card } from 'react-materialize';
-import { entries } from '../App/App';
 import './SalesMenu.scss';
-
-// metadata
-const month = 'November';
-const currency = 'SGD';
-const amount = 80586.54;
-const cards = [
-  {
-    cardId: 0,
-    title: `Total sales in ${month}?`,
-    content: `You have sales worth ${currency} ${amount} in the last 30 days.`,
-  },
-  {
-    cardId: 1,
-    title: 'Total sales this week?',
-    content: 'You have not sold anything this week or you have not uploaded your invoices.',
-  },
-  {
-    cardId: 2,
-    title: 'Card #3',
-    content: '#3 Lorem ipsum dolor sit amet',
-  },
-  {
-    cardId: 3,
-    title: 'Card #4',
-    content: '#4 consectetur adipiscing elit',
-  },
-];
 
 
 const Header = ({ title, description }) => (
@@ -82,10 +54,11 @@ class SalesMenu extends Component {
   );
 
   render() {
+    const { cards, entryName, entryDescription } = this.props;
     const { pinnedCard } = this.state;
     return (
       <div className="sales-menu">
-        <Header title={entries[0].name} description={entries[0].description} />
+        <Header title={entryName} description={entryDescription} />
         <hr />
         {cards.filter(c => c.cardId === pinnedCard).map(this.createCard)}
         {cards.filter(c => c.cardId !== pinnedCard).map(this.createCard)}
@@ -94,6 +67,17 @@ class SalesMenu extends Component {
     );
   }
 }
+SalesMenu.propTypes = {
+  cards: PropTypes.arrayOf(
+    PropTypes.shape({
+      cardId: PropTypes.number,
+      title: PropTypes.string,
+      content: PropTypes.content,
+    }),
+  ).isRequired,
+  entryName: PropTypes.string.isRequired,
+  entryDescription: PropTypes.string.isRequired,
+};
 
 
 // A card that supports pinning or unpinning.
@@ -108,9 +92,7 @@ const PinCard = ({
         className="hoverable z-depth-2"
         title={title}
         actions={[
-          isPinned
-            ? <PinButton cardId={cardId} key={cardId} onPinHandler={onPinHandler} toPin={false} />
-            : <PinButton cardId={cardId} key={cardId} onPinHandler={onPinHandler} toPin />,
+          <PinButton cardId={cardId} key={cardId} onPinHandler={onPinHandler} toPin={!isPinned} />,
         ]}
       >
         {content}
@@ -143,6 +125,7 @@ PinButton.propTypes = {
   toPin: PropTypes.bool.isRequired,
   onPinHandler: PropTypes.func.isRequired,
 };
+
 
 export {
   PinCard,

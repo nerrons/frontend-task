@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './MainMenu.scss';
 
+
 // A menu is a title plus a list of entries.
 const MainMenu = ({ title, entries }) => (
   <div className="main-menu">
@@ -29,6 +30,7 @@ MainMenu.propTypes = {
     }),
   ).isRequired,
 };
+
 
 const Title = ({ children }) => (
   <div className="main-title">
