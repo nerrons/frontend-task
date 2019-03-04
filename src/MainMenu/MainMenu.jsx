@@ -18,7 +18,6 @@ const MainMenu = ({ title, entries }) => (
         <hr />
       </div>
     ))}
-    <NavLink to="/">Back to main menu</NavLink>
   </div>
 );
 MainMenu.propTypes = {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 import { Row, Col, Card } from 'react-materialize';
 import { entries } from '../App/App';
 import './SalesMenu.scss';
@@ -88,6 +89,7 @@ class SalesMenu extends Component {
         <hr />
         {cards.filter(c => c.cardId === pinnedCard).map(this.createCard)}
         {cards.filter(c => c.cardId !== pinnedCard).map(this.createCard)}
+        <NavLink to="/">Back to Main Menu</NavLink>
       </div>
     );
   }

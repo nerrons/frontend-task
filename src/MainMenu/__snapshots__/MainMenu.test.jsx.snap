@@ -264,14 +264,5 @@ exports[`MainMenu has a valid snapshot 1`] = `
     </div>
     <hr />
   </div>
-  <a
-    aria-current="page"
-    className="active"
-    href="#/"
-    onClick={[Function]}
-    style={Object {}}
-  >
-    Back to main menu
-  </a>
 </div>
 `;
