@@ -59,12 +59,12 @@ const cards = [
 ];
 
 
-const KonigleMainMenu = () => (
-  <MainMenu title="Konigle" entries={entries} />
+const RenderedMainMenu = () => (
+  <MainMenu title="React Business Tool" entries={entries} />
 );
 
 
-const KonigleSalesMenu = () => (
+const RenderedSalesMenu = () => (
   <SalesMenu
     entryName={entries[0].name}
     entryDescription={entries[0].description}
@@ -75,8 +75,8 @@ const KonigleSalesMenu = () => (
 const App = () => (
   <HashRouter>
     <div className="App">
-      <Route exact path="/" component={KonigleMainMenu} />
-      <Route exact path="/sales" component={KonigleSalesMenu} />
+      <Route exact path="/" component={RenderedMainMenu} />
+      <Route exact path="/sales" component={RenderedSalesMenu} />
     </div>
   </HashRouter>
 );
