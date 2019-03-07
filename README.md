@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Frontend Task
+# React Business Tool
 
 - Powered by React, create-react-app, Materialize, React Router and Heroku
 - In the sales menu, a very primitive pinning feature allows users to pin up to one card at a time, displaying the rest in the default order
